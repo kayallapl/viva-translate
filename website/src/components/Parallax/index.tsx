@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { GradientCircle, GradientRectangle, Image, Title } from "../../components/styledElements";
 import { meetImage2, messageBox, vivaSample } from '../../images/image-imports';
 import { white } from '../../styles/colors';
-import { ParallaxBox } from "./styles";
+import { Box } from "./styles";
 
 const Parallax: React.FC = () => {
     const [pageY, setPageY] = useState(0);
@@ -27,8 +27,8 @@ const Parallax: React.FC = () => {
 
     return (
         <>
-            <Title color={white} padding='24px 0' size='20px'>Mantén a todo el mundo alineado y al día con subtítulos en tiempo real.</Title>
-            <ParallaxBox>
+            <Title color={white} padding='32px 0' size='20px'>Mantén a todo el mundo alineado y al día con subtítulos en tiempo real.</Title>
+            <Box>
                 <GradientRectangle
                     height='60vw'
                     width='80vw'
@@ -64,14 +64,14 @@ const Parallax: React.FC = () => {
                     transform={transform(4)}
                     opacity={opacity}
                 />
-            </ParallaxBox>
-            <Title color={white} padding='24px 0' size='20px'>Termina tus reuniones más rápidamente y automatiza los flujos de trabajo.</Title>
-            <ParallaxBox>
+            </Box>
+            <Title color={white} padding='32px 0' size='20px'>Termina tus reuniones más rápidamente y automatiza los flujos de trabajo.</Title>
+            <Box>
                 <GradientCircle
                     height='50vw'
                     position='absolute'
                     left='0'
-                    top='-16vw'
+                    top='-12vw'
                     transform={transform(2)}
                 />
                 <Image
@@ -82,25 +82,7 @@ const Parallax: React.FC = () => {
                     top='8vw'
                     opacity={opacity}
                 />
-            </ParallaxBox>
-            <Title color={white} padding='24px 0' size='20px'>Construido para equipos globales.</Title>
-            <ParallaxBox>
-                <GradientCircle
-                    height='50vw'
-                    position='absolute'
-                    left='0'
-                    top='-16vw'
-                    transform={transform(2)}
-                />
-                <Image
-                    src={vivaSample}
-                    width='60vw'
-                    position='absolute'
-                    left='calc(50% - 30vw)'
-                    top='8vw'
-                    opacity={opacity}
-                />
-            </ParallaxBox>
+            </Box>
         </>
     )
 };

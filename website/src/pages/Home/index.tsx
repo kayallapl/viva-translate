@@ -25,6 +25,14 @@ const Home: React.FC = () => {
                 <Parallax />
             </Container>
         </Section>
+        <Section bgcolor={darkGray}>
+            <Container>
+                <Flexbox hAlign='center' direction='column' vAlign='center' padding='70px 0'>
+                    <Title color={white} >Observa cómo Viva puede trabajar para ti.</Title>
+                    <Button>Quiero intentarlo</Button>
+                </Flexbox>
+            </Container>
+        </Section>
     </>
     )
 };

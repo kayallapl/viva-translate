@@ -2,7 +2,18 @@ import styled from "styled-components";
 import { black, blue, purple } from "../styles/colors";
 
 
-export const Image = styled.img<{ width?: string, position?: string, left?: string, right?: string, top?: string, bottom?: string, transform?: string, visibility?: string, opacity?: number }>`
+export const Image = styled.img<{ 
+        width?: string,
+        position?: string,
+        left?: string,
+        right?: string,
+        top?: string,
+        bottom?: string,
+        transform?: string,
+        visibility?: string,
+        opacity?: number,
+        onHover?: string
+    }>`
     width: ${props => props.width || "unset"};
     position: ${props => props.position || "relative"};
     left: ${props => props.left || "unset"};
@@ -11,6 +22,9 @@ export const Image = styled.img<{ width?: string, position?: string, left?: stri
     bottom: ${props => props.bottom || "unset"};
     transform: ${props => props.transform || "unset"};
     opacity: ${props => props.opacity || "1"};
+    &:hover {
+        ${props => props.onHover};
+    }
 `;
 
 export const Paragraph = styled.p``;

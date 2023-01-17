@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const ParallaxBox = styled.div`
+export const Box = styled.div`
     position: relative;
-    height: 80vw;
+    height: 70vw;
 `
